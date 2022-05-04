@@ -1,0 +1,198 @@
+.body {
+  background-color: #faf4f2;
+  margin: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.header {
+  /* mã màu HEX: #rrggbb 0 => f */
+  background-color: #f1e1db;
+  padding: 10px 30px;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+}
+
+.header .logo {
+  /* inline ko làm dc: width height margin top bottom */
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.header .logo img {
+  width: 70px;
+}
+
+.header .navbar a {
+  /* text-decoration: underline; */
+  /* text-decoration: overline; */
+  /* text-decoration: line-through; */
+  text-decoration: none;
+  color: #000000;
+  margin-right: 20px;
+  /* background-color: green; */
+}
+.header .navbar a:hover{
+  color: #ff0000;
+}
+
+/* <!-- carousel --> */
+.carousel{
+  background-image: url(../img/BG.png);
+  height: 800px;
+  /* khong lap lai hinh */
+  background-repeat: no-repeat; 
+  /* la x va y  */
+  background-size: cover;
+  /* chinh giua hinh x va y*/
+  background-position: center ;
+
+}
+
+/* <!-- activity --> */
+.activity{
+  padding: 80px 0;
+  
+}
+.activity .title{
+  text-align: center;
+  color: #8d8d8d;
+}
+.activity .main .row .col{
+  float: left;
+  width: 25%;
+  padding: 0 15px;
+  /* không cộng dồn nữa  */
+  box-sizing: border-box;
+}
+
+/* xet kich thuoc hinh luon luon nam trong item khi hinh to */
+.activity .main .item .thumbnail img {
+  width: 100%;
+  border-radius: 20px;
+}
+.activity .main .item {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+}
+.activity .main .item .thumbnail {
+  position: relative;
+}
+.activity .main .item .thumbnail i {
+  background-color:rgba(255, 255, 255, 0.5);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #ff0000;
+  font-size: 20px;
+  /* absolute:bắt buộc cho nó 1 vị trí ,phải có cha
+  , relative: vị trí hiện tại t,l,r,bottom
+   , fixed: cố định trên màn hình chỉ bằng nd phải thêm width */
+  position: absolute;
+  top: 20px;
+  right:20px ;
+  border-radius: 15px;
+  /* opacity: 0.5;là làm mờ */
+  
+}
+.activity .main .item h1 {
+  font-size: 25px;
+}
+.activity .main .item p {
+  color: #b3b3b3;
+  /* khoảng trắng chiêu cao */
+  line-height: 25px;
+}
+.activity .main .item a {
+  background-color: #e8e8e8;
+  /* Bỏ đường gạch chân */
+  text-decoration: none;
+  padding: 10px 30px;
+  /* ép kiểu là bằng kích nội dung */
+  display:inline-block ;
+  border-radius: 100px;
+  color: #8d8d8d;
+}
+.main{
+  text-align: center;
+}
+.main button{
+  margin-top: 20px;
+  border: solid #f1b4a5;
+  border-width: 1px;
+  color: #f1b4a5;
+  padding: 10px 70px;
+  border-radius: 100px;
+} 
+
+/* <!-- contact --> */
+.contact .row{
+  background-color: #f8e1db;
+  
+}
+.contact .row .info-l {
+  background-image: url(../img/mask.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 50px;
+  float: left;
+  width: 45%;
+}
+.contact .row .info-r{
+  width: 50%;
+  float: right;
+  color: #939191;
+}
+.contact .row .info-r .row-r .App{
+  float: left;
+  width: 40%;
+  height: 100px;
+}
+.contact .row .info-r .row-r .App img{
+  width: 100px;
+}
+.contact .row .info-r .row-r .foll{
+  float: right;
+  width: 60%;
+  height: 100px;
+}
+.contact .row .info-r .row-r .foll i{
+  color: #e76f51;
+  font-size: 35px;
+} 
+
+/* <!-- footer --> */
+.footer {
+  color: #3a3735;
+  line-height: 30px;
+  padding:100px 50px;
+  margin-top: 100px;
+  background-color: #f8e1db;
+  border-radius: 100px 100px 0 0;
+  font-family: sans-serif;
+}
+.footer .row .item-l {
+  float: left;
+  width: 35%;
+  margin: 0 20px;
+
+}
+.footer .row .item-r {
+  float: left;
+  width:20% ;
+}
+.footer .row .item-r li{
+  list-style: none;
+}
+.footer .end {
+  text-align: center;
+}
